@@ -15,3 +15,5 @@ email-validator
 PyJWT
 passlib[bcrypt]
 argon2-cffi
+pytest
+httpx
