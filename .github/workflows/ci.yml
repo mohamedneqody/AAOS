@@ -9,24 +9,21 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
-    
+
     steps:
     - uses: actions/checkout@v3
-    
-    - name: Run Tests
-      run: |
-        docker compose up -d --build
-        sleep 15
-        docker compose exec -T python-worker pip install pytest httpx
-        docker compose exec -T python-worker python -m pytest test_auth.py
-        
-  build:
-    runs-on: ubuntu-latest
-    needs: test
-    
-    steps:
-    - uses: actions/checkout@v3
-    
-    - name: Build Docker Compose
+
+    - name: Build and start services
       run: |
         docker compose build
+        docker compose up -d
+        sleep 20
+
+    - name: Run Tests
+      run: |
+        docker compose exec -T python-worker pip install pytest httpx
+        docker compose exec -T python-worker python -m pytest test_auth.py
+
+    - name: Tear down
+      if: always()
+      run: docker compose down
