@@ -26,6 +26,8 @@ jobs:
         pip install pytest httpx
         
     - name: Run Tests
+      env:
+        PYTHONPATH: ${{ github.workspace }}
       run: |
         cd python-workers
         pytest test_auth.py
