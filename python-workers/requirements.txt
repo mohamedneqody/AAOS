@@ -1,0 +1,17 @@
+psycopg2-binary>=2.9.9
+redis==5.0.1
+pandas
+numpy
+requests==2.31.0
+python-dotenv==1.0.1
+sqlalchemy>=2.0.0
+fastapi
+uvicorn
+pydantic
+openpyxl
+PyYAML
+google-auth
+email-validator
+PyJWT
+passlib[bcrypt]
+argon2-cffi
