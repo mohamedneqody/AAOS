@@ -1,0 +1,26 @@
+routing:
+  trend_analysis:
+    worker: python_worker
+    runtime: Python
+    manifest: v1.0
+    version: 1.0.0
+  pareto_analysis:
+    worker: python_worker
+    runtime: Python
+    manifest: v1.0
+    version: 1.0.0
+  forecast:
+    model: gemini_1_5_pro
+    runtime: LLM
+    manifest: v1.0
+    version: 1.0.0
+  revenue_validation:
+    worker: python_worker
+    runtime: Python
+    manifest: v1.0
+    version: 1.0.0
+  strategic_planning:
+    model: gemini_2_5_pro
+    runtime: LLM
+    manifest: v1.0
+    version: 1.0.0

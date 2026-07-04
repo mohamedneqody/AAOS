@@ -1,0 +1,34 @@
+profiles:
+  strategic_planning:
+    model: gemini_2_5_pro
+    temperature: 0.2
+    max_tokens: 4096
+    description: "Used for high-level reasoning, campaign generation, and risk assessment."
+
+  quality_review:
+    model: gemini_2_5_pro
+    temperature: 0.1
+    max_tokens: 2048
+    description: "Used for deep content validation against policies."
+
+  copy_generation:
+    model: gemini_3_5_flash
+    temperature: 0.8
+    max_tokens: 8192
+    description: "Used for writing articles, posts, and scripts quickly and cheaply."
+
+  summarization:
+    model: gemini_3_5_flash
+    temperature: 0.3
+    max_tokens: 2048
+    description: "Used for extracting key points from long texts."
+
+  deterministic_data:
+    worker: python
+    module: data_worker
+    description: "Data manipulation, CSV parsing, pandas operations."
+
+  analytics:
+    worker: python
+    module: analytics_worker
+    description: "Metrics calculation, EPC/ROI computation."

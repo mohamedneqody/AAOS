@@ -1,0 +1,64 @@
+routing:
+  analytics:
+    worker: analytics_worker
+    class: AnalyticsWorker
+    version: "1.0"
+    timeout: 300
+    retry: true
+    estimated_cost: 0.01
+    estimated_duration: 1.5
+    entry_point: execute
+  statistics:
+    worker: statistics_worker
+    class: StatisticsWorker
+    version: "1.0"
+    timeout: 300
+    retry: true
+    estimated_cost: 0.01
+    estimated_duration: 1.5
+    entry_point: execute
+  business:
+    worker: business_worker
+    class: BusinessWorker
+    version: "1.0"
+    timeout: 300
+    retry: true
+    estimated_cost: 0.01
+    estimated_duration: 1.5
+    entry_point: execute
+  forecast:
+    worker: forecast_worker
+    class: ForecastWorker
+    version: "1.0"
+    timeout: 300
+    retry: true
+    estimated_cost: 0.01
+    estimated_duration: 1.5
+    entry_point: execute
+  revenue:
+    worker: revenue_worker
+    class: RevenueWorker
+    version: "1.0"
+    timeout: 300
+    retry: true
+    estimated_cost: 0.01
+    estimated_duration: 1.5
+    entry_point: execute
+  validation:
+    worker: validation_worker
+    class: ValidationWorker
+    version: "1.0"
+    timeout: 300
+    retry: true
+    estimated_cost: 0.01
+    estimated_duration: 1.5
+    entry_point: execute
+  data_manipulation:
+    worker: statistics_worker
+    class: StatisticsWorker
+    version: "1.0"
+    timeout: 300
+    retry: true
+    estimated_cost: 0.01
+    estimated_duration: 1.5
+    entry_point: execute

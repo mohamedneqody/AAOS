@@ -1,0 +1,21 @@
+capabilities:
+  trend_analysis:
+    enabled: true
+    timeout: 300
+    idempotent: true
+  pareto_analysis:
+    enabled: true
+    timeout: 300
+    idempotent: true
+  forecast:
+    enabled: true
+    timeout: 600
+    idempotent: true
+  revenue_validation:
+    enabled: true
+    timeout: 60
+    idempotent: true
+  strategic_planning:
+    enabled: true
+    timeout: 600
+    idempotent: false

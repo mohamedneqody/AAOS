@@ -1,0 +1,96 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+.venv/
+env/
+.env
+
+# Docker
+.docker/
+docker-compose.override.yml
+
+# IDE / Editor
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Logs
+*.log
+
+# Caching
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+.mypy_cache/
+.ruff_cache/
+
+# Databases
+*.sqlite
+*.sqlite3
+database.sqlite
+
+# Temporary & Scaffold Scripts
+bootstrap*.py
+fix_*.py
+generate_*.py
+final_fixes.py
+update_workflow*.py
+implement_bootstrap.py
+production_bootstrap.py
+check_api.py
+read_exec.py
+test_schema.py
+e2e_demo.py
+execute_campaign.py
+activate_webhook.py
+load_test.py
+recovery_test.py
+validate_sprint*.py
+validate_hotfixes.py
+
+# Temporary outputs
+*.json
+*.txt
+*.tmp
+*.bak
+*.cache
+*.db
+
+# Environment and Secrets
+.env.*
+*credentials*.json
+*service-account*.json
+*gcp*.json
+
+# Generated Directories
+coverage/
+generated/
+artifacts/
+exports/
+reports/
